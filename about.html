@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title> My Web Page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo2.png" class="logo"></a>
+                
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    
+                    <ul>
+	                   <li><a href="Index.html">HOME</a> </li>
+	                   <li><a href="about.html">ABOUT ME</a></li>
+                       <li><a href="interests.html">INTERESTS</a></li>
+	                   <li><a href="videos.html">VIDEOS</a></li>
+	               </ul>
+                </div> 
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        
+        <div class="text-box2">
+            
+            <h2> About Me </h2>
+
+<p2> Hi, my name is Mathew Issa. I am a first year at the College of San Mateo. I am majoring in Computer Engineering and in my free time I enjoy working out and playing volleyball. </p2>
+<!-- This is the start of the html code for the second section and we will start section and we will start each section with a header tag
+-->
+        </div>
+        
+        <img class="image-Vol" src="Images/1FEO.gif">
+        <img class="image-Col" src="Images/compeng.jpg">
+        <img class="image-gol" src="Images/gym.jpg">
+        <img class="image-kol" src="Images/CSM.jpg">
+        </section>
+    
+<!-----JavaScript fot menu toggle--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+    </script>
+
+</body>
+</html>
+
+

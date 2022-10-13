@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title> My Web Page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo2.png" class="logo"></a>
+                
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    
+                    <ul>
+	                   <li><a href="Index.html">HOME</a> </li>
+	                   <li><a href="about.html">ABOUT ME</a></li>
+                       <li><a href="interests.html">INTERESTS</a></li>
+	                   <li><a href="videos.html">VIDEOS</a></li>
+	               </ul>
+                </div> 
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        
+        <div class="text-box">
+           
+            <h1> Mathew Issa's <br>First Web Page </h1>
+
+            <p> Welcome to my FIRST webpage!!! Everything you read here is what you need to know about me. </p>
+<!-- This is the start of the html code for the second section and we will start section and we will start each section with a header tag
+-->
+        </div>
+        
+        <img class="image-Me" src="Images/ME3.png">
+        
+        </section>
+    
+    <section class="thoughts">  
+        <h5>Thoughts On This Website</h5>
+        <p5>Give Me your honest opinion on this website.</p5>
+        <br>
+        <br>
+        <br>
+        <div class="form">
+            <form action="/action_page.php">
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName"><br><br>
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName"><br><br>
+                    
+                    <label for="YourAge"> How old are you?</label><br>
+                    <input type="checkbox" id="child" name="age" value="child">
+                    <label for="child">17 years or younger</label><br>
+                    <input type="checkbox" id="adult" name="age" value="adult">
+                    <label for="adult">18 - 64 years old</label><br>
+                    <input type="checkbox" id="senior" name="age" value="senior">
+                    <label for="senior">65 years or older</label><br><br>
+                
+                    <label for="birthday">Birthday:</label><br>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <label for="MultCho">How much do you rate this site out of 10:</label><br>
+                    <input type="radio" id="bad" name="rating" value="bad">
+                    <label for="bad">1-3(Terrible)</label><br>
+                    <input type="radio" id="Average" name="rating" value="Average">
+                    <label for="Average">4-7(It's Okay)</label><br>
+                    <input type="radio" id="Great" name="rating" value="Great">
+                    <label for="Great">8-10(It's Amazing)</label><br>
+                    <br>
+                
+                    <label for="freeform">Tell me about any other thoughts:</label>
+                    <br>
+                    <textarea id="freeform" name="freeform" rows="4" cols="50">
+                    </textarea><br><br>
+                    <input type="submit" value="Submit">
+                <br>
+                <br>
+                <br>
+                <br>
+</form>
+        
+        
+        </div>
+            
+    
+    </section>
+    
+<!-----JavaScript fot menu toggle--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+    </script>
+
+</body>
+</html>
+
