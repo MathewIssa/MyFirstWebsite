@@ -121,10 +121,7 @@ nav img{
 
 .image-Me{ 
     width: 220px;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
     
 }
 .image-Vol{
